@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  // this defines what 1rem is as a substitute for pixels
+  font-size: 62.5%;
+}
