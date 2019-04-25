@@ -14,10 +14,12 @@ class Header extends Component {
         }}
       >
         <Toolbar>
-          <Typography style={{ flex: 1 }}>Welcome to Ec Cards!</Typography>
-          <Button>About Us</Button>
-          <Button>Login</Button>
-          <Button>Register</Button>
+          <Typography style={{ flex: 1, fontSize: "1.5rem" }}>
+            Welcome to Ec Cards!
+          </Typography>
+          <Button style={{ fontSize: "1.5rem" }}>About Us</Button>
+          <Button style={{ fontSize: "1.5rem" }}>Login</Button>
+          <Button style={{ fontSize: "1.5rem" }}>Register</Button>
         </Toolbar>
       </AppBar>
     );
