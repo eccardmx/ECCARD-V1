@@ -1,8 +1,14 @@
-import React from "react";
-import { Link, Switch } from "react-router-dom";
+import React, { Component } from "react";
+import Header from "../components /header_footer/Header";
 
-const Routes = () => {
-  return <div />;
-};
+class App extends Component {
+  render() {
+    return (
+      <div className="landingpage">
+        <Header />
+      </div>
+    );
+  }
+}
 
-export default Routes;
+export default App;
