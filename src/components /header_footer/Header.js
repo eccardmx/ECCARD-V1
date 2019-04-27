@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+
+import { EccardLogo } from "../../utils/Icons";
+import { NavButton } from "../../utils/Button";
 
 class Header extends Component {
   render() {
@@ -13,13 +15,23 @@ class Header extends Component {
           boxShadow: "none"
         }}
       >
-        <Toolbar>
-          <Typography style={{ flex: 1, fontSize: "1.5rem" }}>
-            Welcome to Ec Cards!
-          </Typography>
-          <Button style={{ fontSize: "1.5rem" }}>About Us</Button>
-          <Button style={{ fontSize: "1.5rem" }}>Login</Button>
-          <Button style={{ fontSize: "1.5rem" }}>Register</Button>
+        <Toolbar style={{ display: "flex" }}>
+          <Grid
+            container
+            style={{
+              width: "70%",
+              display: "inline-block",
+              padding: "2rem"
+            }}
+          >
+            <EccardLogo link={true} linkTo="/" width="70px" height="70px" />
+          </Grid>
+
+          <NavButton>About Us</NavButton>
+
+          <NavButton>Login</NavButton>
+
+          <NavButton>Register</NavButton>
         </Toolbar>
       </AppBar>
     );

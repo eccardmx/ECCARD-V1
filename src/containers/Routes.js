@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components /header_footer/Header";
 
-class App extends Component {
+class Routes extends Component {
   render() {
     return (
       <div className="landingpage">
@@ -11,4 +11,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Routes;
