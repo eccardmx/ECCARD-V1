@@ -6,6 +6,8 @@ import Grid from "@material-ui/core/Grid";
 import { EccardLogo } from "../../utils/Icons";
 import { NavButton } from "../../utils/Button";
 
+import About from "../about_us/About";
+
 class Header extends Component {
   render() {
     return (
@@ -27,7 +29,7 @@ class Header extends Component {
             <EccardLogo link={true} linkTo="/" width="70px" height="70px" />
           </Grid>
 
-          <NavButton>About Us</NavButton>
+          <About />
 
           <NavButton>Login</NavButton>
 
