@@ -7,6 +7,8 @@ import { EccardLogo } from "../../utils/Icons";
 import { NavButton } from "../../utils/Button";
 
 import About from "../about_us/About";
+import Login from "../login /Login";
+import Register from "../register/Register";
 
 class Header extends Component {
   render() {
@@ -28,12 +30,9 @@ class Header extends Component {
           >
             <EccardLogo link={true} linkTo="/" width="70px" height="70px" />
           </Grid>
-
           <About />
-
-          <NavButton>Login</NavButton>
-
-          <NavButton>Register</NavButton>
+          <Login />
+          <Register />
         </Toolbar>
       </AppBar>
     );
